@@ -1,1 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
+body {
+    background-color: rgba(136, 132, 132, 0.577);
+}
+
+.cute-space-text {
+    font-family: 'Zen Dots', sans-serif;
+    color: #333;
+}
