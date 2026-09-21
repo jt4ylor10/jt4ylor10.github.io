@@ -4,13 +4,14 @@ img{
     align-items: center;
  }
 
-.main-footer{
+footer{
     background-image: url('img/Proj2Footer.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
-    padding: 40px 20px;
-    text-color: #ffffff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
 }
  
 body {
