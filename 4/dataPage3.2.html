@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+    <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dataPageStyles.css">
+    <title> Dusty's Star Log: Neutron Star </title>
+
+</head>
+<body>
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="moreInfoPage.html" class="nav-item">More Info</a></li>
+            <li><a href="contactPage.html" class="nav-item">Contact Dusty</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1> Evolved Giant Star: Neutron Star </h1>
+
+    <div class="main-card">
+        <img src="CSS/img/neutronStar1.jpg" alt="A sky full of red stars, with a large colorful dust cloud from a Neutron Star." class="mobile-img">
+        <p class="mobile-cred">IMAGE: A Lonely Nuetron Star | IMAGE CREDIT:  X-ray (NASA/CXC/ESO/F.Vogt et al); Optical (ESO/VLT/MUSE & NASA/STScI) </p>
+        <h2 style="text-decoration: underline;">Dusty's Log Entry: </h2>
+        <ul>
+            <li>Type: stellar remnant</li>
+            <li>Temperature: about a million K at birth</li>
+            <li>Mass: about 1.1 - 2.3 Suns</li>
+            <li>Lifespan: billions of years </li>
+            <li>What's Next: continuously cools and slows down</li>
+        </ul>
+
+        <p> Neutron stars are formed when a massive star's core collapses during a supernova. When the core crushes, protons
+            and electrons are forced to merge into neutrons. A teaspoon of this matter would weight billions of tons. 
+            The core spins faster and the magnetic field intensifies as the core shrinks. These neutron stars include pulsars, 
+            which beam radiation across space. There are thought to be around one billion neutron stars in the Milky Way.
+        </p>
+
+            <p>Examples of neutron stars includes Crab Pulsar and the Vela Pulsar. </p>
+     </div>
+
+     <div class="row1">
+        <img src="CSS/img/neutronStar1.jpg" alt="A sky full of red stars, with a large colorful dust cloud from a Neutron Star." class="row-img">
+     </div>
+     <div class ="cred-row">
+        <p class = "leftCred" style=" text-align: center;">IMAGE: A Lonely Nuetron Star | IMAGE CREDIT:  X-ray (NASA/CXC/ESO/F.Vogt et al); Optical (ESO/VLT/MUSE & NASA/STScI)</p>
+        </div>
+
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+
+      <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>

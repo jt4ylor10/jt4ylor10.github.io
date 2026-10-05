@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+ <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dataPageStyles.css">
+    <title> Dusty's Star Log: Black Dwarf </title>
+
+</head>
+<body>
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="moreInfoPage.html" class="nav-item">More Info</a></li>
+            <li><a href="contactPage.html" class="nav-item">Contact Dusty</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1> Evolved Giant Star: Black Dwarf </h1>
+
+    <div class="main-card">
+        <img src="CSS/img/blackDwarf1.jpg" alt="A black circle surronded by a star-filled space." class="mobile-img">
+        <p class="mobile-cred">IMAGE: A theoretical Black Dwarf | IMAGE CREDIT: <a href="https://commons.wikimedia.org/wiki/File:Black_dwarf_star-bpk.jpg" 
+        style=" color: black;">Baperookamo</a></p>
+        <h2 style="text-decoration: underline;">Dusty's Log Entry: </h2>
+        <ul>
+            <li>Type: hypothetical remnant</li>
+            <li>Temperature: 2.7 K</li>
+            <li>Mass: 0.6 Suns</li>
+            <li>Lifespan: forever </li>
+            <li>What's Next: nothing</li>
+        </ul>
+
+        <p> A black dwarf is a theoretical star which explains life after a white dwarf. As a white dwarf cools 
+            off, it will eventually have cooled completely. At that point, it's a black dwarf which gives off no light 
+            and is the same temperature as the space around it. A white dwarf cools extremely slowly, with a lifespan 
+            of at least hundreds of trillions of years. The universe is about 13.4 billion years old, as such, a black dwarf 
+            can't even exist yet. The oldest of white dwarfs are still glowing today, but a black dwarf is 
+            a highly logical theory for the future of all sunlike stars. 
+        </p>
+
+            <p>There are no examples, except for illustrations. </p>
+     </div>
+
+     <div class="row1">
+        <img src="CSS/img/blackDwarf1.jpg" alt="A black circle surronded by a star-filled space." class="row-img">
+     </div>
+     <div class ="cred-row">
+       <p class = "leftCred" style=" text-align: center;"> IMAGE: A theoretical Black Dwarf | IMAGE CREDIT: <a href="https://commons.wikimedia.org/wiki/File:Black_dwarf_star-bpk.jpg" 
+        style=" color: white;">Baperookamo</a> </p>
+        </div>
+
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+
+      <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>

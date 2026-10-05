@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+ <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dataPageStyles.css">
+    <title> Dusty's Star Log: Blue Supergiant </title>
+
+</head>
+<body>
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="moreInfoPage.html" class="nav-item">More Info</a></li>
+            <li><a href="contactPage.html" class="nav-item">Contact Dusty</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1> Evolved Giant Star: Blue Supergiant </h1>
+
+    <div class="main-card">
+      <img src="CSS/img/blueSupergiant1.jpg" alt="Image of a bright blue star, Rigel, in the middle of Earth's colorful space." class="mobile-img">
+        <p class="mobile-cred">IMAGE: Rigel | IMAGE CREDIT: Rheinhold Wittich</p>
+        <h2 style="text-decoration: underline;">Dusty's Log Entry: </h2>
+        <ul>
+            <li>Type: supergiant</li>
+            <li>Temperature: about 10,000 - 30,000 K</li>
+            <li>Mass: about 20 - 40 Suns</li>
+            <li>Lifespan: a few million years </li>
+            <li>What's Next: supernova</li>
+        </ul>
+ 
+        <p> Blue supergiants are hot, massive stars that have left main sequence, but haven't cooled or swelled
+            like a red supergiant. These stars remain hot and extremelty bright, much more brighter than
+            the red supergiant and 100,000 brighter than the Sun. Some blue supergiants are young stars at the 
+            start of their giant phase. On the other hand, other blue supergiants can be stars that were 
+            reviously red supergiants which shrank and heated up again. 
+        </p>
+
+            <p>Example of the blue supergiant includes Rigel. </p>
+     </div>
+
+     <div class="row1">
+        <img src="CSS/img/blueSupergiant1.jpg" alt="Image of a bright blue star, Rigel, in the middle of Earth's colorful space." class="row-img">
+     </div>
+     <div class ="cred-row">
+        <p class = "leftCred" style=" text-align: center;">IMAGE: Rigel | IMAGE CREDIT: Rheinhold Wittich</p>
+        </div>
+
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+
+      <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>

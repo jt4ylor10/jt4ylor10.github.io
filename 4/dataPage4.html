@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+    <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dataPageStyles.css">
+    <title> Dusty's Star Log: Rare & Extreme Stars </title>
+
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="moreInfoPage.html" class="nav-item">More Info</a></li>
+            <li><a href="contactPage.html" class="nav-item">Contact Dusty</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <h1 style= "text-align:center;"> Rare & Extreme Stars </h1>
+
+    <div class="row1">
+        <img src="CSS/img/wolfRayet2.jpg" alt="The star shines brightly at the very centre of this explosive image and around the hot clumps of gas are ejected into space at over 150 000 kilometres per hour." class="row-img">
+        <img src="CSS/img/magnetar2.webp" alt="a magnetar is depicted losing material into space in this artist's concept. The magnetar's strong, twisted magnetic field lines (shown in green) can influence the flow of electrically charged material from the object, which is a type of neutron star." class="row-img">
+        <img src="CSS/img/yellowHypergiant2.webp" alt="A bright yellow star far in the distance, outshining the canvas of stars around it." class="row-img">
+        <img src="CSS/img/brownDwarf2.png" alt="An illustration of a black space filled with stars, with a large brown planet-like star in the center." class="row-img">
+    </div>
+
+     <div class ="cred-row">
+       <p class = "leftCred" style=" text-align: center;">IMAGE: Wolf-Rayet 124 | IMAGE CREDIT: ESA/Hubble and NASA</p>
+       <p class = "leftCred" style=" text-align: center;">IMAGE: A Magnetar | IMAGE CREDIT:  NASA/JPL-Caltech</p>
+       <p class = "leftCred" style=" text-align: center;">IMAGE: A Yellow Hypergiant | IMAGE CREDIT:  ESO/Digitized Sky Survey 2</p>
+       <p class = "leftCred" style=" text-align: center;">IMAGE: A Illustration of a Brown Dwarf | IMAGE CREDIT: NASA-JPL, Caltech</p>
+        </div>
+
+    <div class="row2">
+        <div class="row-card">
+            <img src="CSS/img/wolfRayet2.jpg" alt="The star shines brightly at the very centre of this explosive image and around the hot clumps of gas are ejected into space at over 150 000 kilometres per hour." class="mobile-img">
+            <p class="mobile-cred"> IMAGE: Wolf-Rayet 124 | IMAGE CREDIT: ESA/Hubble and NASA</p>
+           <a href="dataPage4.1.html" class ="link-decor-black"> Wolf-Rayet Star</a>
+            <P style="text-align: center;"> A giant star that is stripped bare, leaving behind a core and cloud of gas. </p>
+        </div>
+        <div class="row-card">
+            <img src="CSS/img/magnetar2.webp" alt="a magnetar is depicted losing material into space in this artist's concept. The magnetar's strong, twisted magnetic field lines (shown in green) can influence the flow of electrically charged material from the object, which is a type of neutron star." class="mobile-img">
+            <p class="mobile-cred">MAGE: A Magnetar | IMAGE CREDIT:  NASA/JPL-Caltech</p>
+            <a href="dataPage4.2.html" class ="link-decor-black"> Magnetar</a>
+            <P style="text-align: center;"> A neutron star with the strongest magnetic field to ever exist. </p>
+        </div>
+        <div class="row-card">
+            <img src="CSS/img/yellowHypergiant2.webp" alt="A bright yellow star far in the distance, outshining the canvas of stars around it." class="mobile-img">
+            <p class="mobile-cred"> IMAGE: A Yellow Hypergiant | IMAGE CREDIT:  ESO/Digitized Sky Survey 2</p>
+            <a href="dataPage4.3.html" class ="link-decor-black"> Yellow Hypergiant</a>
+            <P style="text-align: center;"> One of the rarest stars to exist, the yellow hypergiant is very unstable compared to its 
+                counterparts. </p>
+        </div>
+        <div class="row-card">
+            <img src="CSS/img/brownDwarf2.png" alt="An illustration of a black space filled with stars, with a large brown planet-like star in the center." class="mobile-img">
+            <p class="mobile-cred">IMAGE: A Illustration of a Brown Dwarf | IMAGE CREDIT: NASA-JPL, Caltech</p>
+            <a href="dataPage4.4.html" class ="link-decor-black"> Brown Dwarf</a>
+            <P style="text-align: center;"> The in-between of a planet and a star. Brown dwarfs are essnetially formed like stars, but lack the necessary 
+                mass in order to act like one. As such, these stars behave more like a planet.
+            </p>
+        </div>
+    </div>
+
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+
+         <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>

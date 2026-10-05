@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+    <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dataPageStyles.css">
+    <title> Dusty's Star Log: Red Giant </title>
+
+</head>
+<body>
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="moreInfoPage.html" class="nav-item">More Info</a></li>
+            <li><a href="contactPage.html" class="nav-item">Contact Dusty</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1 style="text-align: center;"> Evolved Giant Star: Red Giant </h1>
+
+    <div class="main-card">
+        <img src="CSS/img/redGiant1.webp" alt="Image of the star Betelgeuse, comparing it's size with Earth and Jupiter's orbit on the bottom. Left side 
+        highlights Betelgeuse's position in the constellation: Orion the Hunter." class="mobile-img">
+        <p class="mobile-cred">IMAGE: Betelgeuse | IMAGE CREDIT: Andrea Dupree (Harvard-Smithsonian CfA), Ronald Gilliland (STScI), NASA and ESA</p>
+        <h2 style="text-decoration: underline;">Dusty's Log Entry: </h2>
+        <ul>
+            <li>Type: post-main sequence giant</li>
+            <li>Temperature: about 3,000-5,000 K</li>
+            <li>Mass: about 0.5 - 8 Suns</li>
+            <li>Lifespan: a billion years in this stage</li>
+            <li>What's Next: AGB Star</li>
+        </ul>
+
+        <p> Red giants occur when a main-sequence star runs out of hydrogen in its core. This core will shrink and the outer layers will expand. As such, the star has swelled 
+            to tens or hundreds of times it's old size. The Sun is a yellow dwarf star which will become a red giant at the end of its lifespan in 5 billion years. This new large giant
+            will be big enough to swallow Mercury and Venus. While also drying the Earth completely up, ending all life. Red Giants are easy to spot within the night sky, appearing 
+            as several bright lights.
+        </p>
+
+            <p>Example of the red giant includes Betelgeuse. </p>
+     </div>
+
+     <div class="row1">
+        <img src="CSS/img/redGiant1.webp" alt="Image of the star Betelgeuse, comparing it's size with Earth and Jupiter's orbit on the bottom. Left side 
+        highlights Betelgeuse's position in the constellation: Orion the Hunter." class="row-img">
+     </div>
+     <div class ="cred-row">
+        <p class = "leftCred" style=" text-align: center;"> IMAGE: Betelgeuse | IMAGE CREDIT: Andrea Dupree (Harvard-Smithsonian CfA), Ronald Gilliland (STScI), NASA and ESA </p>
+        </div>
+
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+
+      <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>
